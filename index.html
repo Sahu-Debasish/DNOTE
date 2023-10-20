@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DNOTE</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        #notepad {
+            width: 80%;
+            margin: 0 auto;
+            text-align: left;
+            padding: 10px;
+            border: 1px solid #ccc;
+        }
+
+        #buttons {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="notepad" contenteditable="true"></div>
+    <div id="buttons">
+        <select id="formatSelect">
+            <option value="text">Text</option>
+            <option value="html">HTML</option>
+            <option value="word">Word</option>
+            <option value="pdf">PDF</option>
+        </select>
+        <button onclick="downloadDocument()">Download</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
